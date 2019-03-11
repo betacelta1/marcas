@@ -206,7 +206,7 @@ function corregirText(){
 //Corregir select normal
 function corregirSelect(){
 	
-	for(pregunta=2; pregunta<4; pregunta++){
+	for(pregunta=2; pregunta<5; pregunta++){
 		
 		if(respuestas[pregunta][0]==document.getElementsByTagName("select")[pregunta-2].value){	
 			
