@@ -1,5 +1,5 @@
 // fichero xml que está en el servidor rawgit
-var url="xml.xml";
+var url="https://raw.githack.com/betacelta1/marcas/master/ReadyPlayerOne/js/xml.xml";
 
 //Variables
 var i = 0;
