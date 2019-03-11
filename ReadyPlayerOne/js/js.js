@@ -131,7 +131,7 @@ function ponerDatosSelectHtml(t,opcionesSelect,pregunta) {
 //Imprimir Select  multiple
 function ponerDatosMultipleHtml(t,opcionesSelect,pregunta) {
 	document.getElementsByTagName("h3")[pregunta].innerHTML = t;
-	var select = document.getElementsByTagName("select")[pregunta-2];
+	var select = document.getElementsByTagName("select")[pregunta-5];
 	for (i = 0; i < opcionesSelect.length; i++) {
         var option = document.createElement("option");
         option.text = opcionesSelect[i];
@@ -165,7 +165,7 @@ function ponerDatosCheckboxHtml(t,opt, pregunta) {
 //Imprimir Radio
 function ponerDatosRadioHtml(t,opt,pregunta) {
 	document.getElementsByTagName("h3")[pregunta].innerHTML = t;
-	var radioCont = document.getElementsByClassName("radio")[pregunta-8];	
+	var radioCont = document.getElementsByClassName("radio")[pregunta-7];	
 	for (i = 0; i < opt.length; i++,x++) {
 		var input = document.createElement("input");
 		var label = document.createElement("label");
