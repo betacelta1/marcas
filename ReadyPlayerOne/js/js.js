@@ -224,7 +224,7 @@ function corregirSelect(){
 }
 //Select Multiple
 function corregirMultiple(){
-	for(pregunta=4;pregunta<6;pregunta++){
+	for(pregunta=5;pregunta<6;pregunta++){
 		
         var sel = document.getElementsByTagName("select")[pregunta-2];
 		
@@ -268,7 +268,7 @@ function corregirCheckbox(){
 	
 	var checkbox;
 	
-	for(pregunta=6;pregunta<8;pregunta++){
+	for(pregunta=6;pregunta<7;pregunta++){
 		
 		var Acertada=[];
 		
@@ -315,7 +315,7 @@ function corregirRadio(){
 	
 	var f=formElement;
 	
-	for (pregunta=8; pregunta<10; pregunta++) {
+	for (pregunta=7; pregunta<10; pregunta++) {
 		
 		var radio;
 		
@@ -358,7 +358,7 @@ function comprobar(){
 		}
 	}
     //select normal
-	for(pregunta=2;pregunta<4;pregunta++){
+	for(pregunta=2;pregunta<5;pregunta++){
 		
 		if (f.elements[pregunta].selectedIndex==0) {
 			
@@ -372,7 +372,7 @@ function comprobar(){
 	
 	
 	//select multiple
-	for(pregunta=4;pregunta<6;pregunta++){
+	for(pregunta=5;pregunta<6;pregunta++){
 		var multipleRespondido=false;
         for(i=0;i<(f.elements[pregunta].length);i++){
             var opt=f.elements[pregunta].options[i];
@@ -387,7 +387,7 @@ function comprobar(){
 		}
 	}
 	//Checkbox
-    for(pregunta=6;pregunta<8;pregunta++){
+    for(pregunta=6;pregunta<7;pregunta++){
         var checked=false;
         var nombre;
         if (pregunta==6){
@@ -407,7 +407,7 @@ function comprobar(){
 		}
 	}
 	// radio
-	for(pregunta=8;pregunta<10;pregunta++){
+	for(pregunta=7;pregunta<10;pregunta++){
 		var nombreRadio;
         if (pregunta==8){
             nombreRadio=f.nombre0;
